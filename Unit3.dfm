@@ -1,0 +1,83 @@
+object Form3: TForm3
+  Left = 531
+  Top = 213
+  BorderStyle = bsToolWindow
+  Caption = 'Gr'#225'fico'
+  ClientHeight = 446
+  ClientWidth = 470
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Chart1: TChart
+    Left = 24
+    Top = 16
+    Width = 417
+    Height = 353
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    Title.Font.Charset = DEFAULT_CHARSET
+    Title.Font.Color = clBlue
+    Title.Font.Height = -13
+    Title.Font.Name = 'Arial'
+    Title.Font.Style = []
+    Title.Text.Strings = (
+      'Gr'#225'fico Temperatura Adiab'#225'tica de Chama')
+    BottomAxis.Automatic = False
+    BottomAxis.AutomaticMaximum = False
+    BottomAxis.AutomaticMinimum = False
+    BottomAxis.ExactDateTime = False
+    BottomAxis.Increment = 0.100000000000000000
+    BottomAxis.Maximum = 2.000000000000000000
+    BottomAxis.Minimum = 0.800000000000000000
+    BottomAxis.Title.Caption = 'fi'
+    Chart3DPercent = 45
+    LeftAxis.Title.Caption = 'Temperatura (K)'
+    Legend.Visible = False
+    View3D = False
+    View3DOptions.Elevation = 309
+    View3DOptions.HorizOffset = -11
+    View3DOptions.Perspective = 30
+    View3DOptions.VertOffset = 7
+    TabOrder = 0
+    object Series1: TLineSeries
+      Marks.ArrowLength = 8
+      Marks.Visible = False
+      SeriesColor = clRed
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.DateTime = False
+      XValues.Name = 'X'
+      XValues.Multiplier = 1.000000000000000000
+      XValues.Order = loAscending
+      YValues.DateTime = False
+      YValues.Name = 'Y'
+      YValues.Multiplier = 1.000000000000000000
+      YValues.Order = loNone
+    end
+  end
+  object BitBtn1: TBitBtn
+    Left = 264
+    Top = 392
+    Width = 113
+    Height = 33
+    Caption = 'Fechar'
+    TabOrder = 1
+    OnClick = BitBtn1Click
+  end
+  object Button1: TButton
+    Left = 96
+    Top = 392
+    Width = 113
+    Height = 33
+    Caption = 'Exportar para o Excel'
+    Enabled = False
+    TabOrder = 2
+  end
+end
